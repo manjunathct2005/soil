@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - FertilityXpert</title>
+  <style>
+    /* Basic styles for the body */
+    body {
+        font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('mountain-6576362_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+    }
+
+    /* Navbar - fixed at the top */
+    nav {
+      width: 100%;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: solid transparent; /* Transparent background */
+      top: 0; /* Sticks to the top */
+      z-index: 1000; /* Keeps it above other content */
+    }
+
+    nav .logo {
+      font-size: 2em;
+      font-weight: bold;
+      color: #ff6b6b;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+  flex-grow: 1;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1em;
+      padding: 5px 10px;
+    }
+
+    nav ul li a:hover {
+      border-bottom: 2px solid #ff6b6b;
+    }
+
+    /* Contact section container */
+    .contact-container {
+      margin-top: 120px;
+      padding: 60px;
+      border-radius: 10px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      max-height: 800px;
+      border-color: black;
+      border: 2px;
+    }
+
+    .contact-container h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      
+    }
+
+    .contact-container p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      background-color: greenyellow;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .contact-container .contact-details {
+      margin-top: 30px;
+      font-size: 1.1em;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1em;
+    }
+
+    .contact-form textarea {
+      height: 150px;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #ff3b3b;
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      background-color: transparent; /* Transparency */
+      color: white;
+      position: relative;
+      bottom: 0;
+      margin-top: auto; /* Ensures footer stays at the bottom */
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    footer ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    footer ul li a:hover {
+      color: #ddd;
+    }
+
+    footer p {
+      margin-top: 10px;
+      font-size: 0.8em;
+    }
+    .h1 .p {
+      background-color: greenyellow;
+      color: whitesmoke;
+    }
+
+    /* Main content to ensure enough scrolling space */
+    .content {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">FertilityXpert</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section Container -->
+  <div class="contact-container content">
+    <h1>Contact Us</h1>
+    <p>If you have any questions, feel free to reach out to us. We are here to help you with soil fertility analysis and more!</p>
+    
+    <div class="contact-details">
+      <p><strong>Location:</strong> Hindupur, Andhra Pradesh, 515201</p>
+      <p><strong>Email:</strong> contact@fertilityxpert.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <form action="#" method="post">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Your Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+    </ul>
+    <p>&copy; 2024 FertilityXpert. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
